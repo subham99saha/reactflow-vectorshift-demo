@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: red; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.toolbar {
+  /* padding: 0px 15px; */
+  background: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  /* background: yellow; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.node-grabber-panel, .node-submit-panel {
+  display: inline-grid
+}
+
+.node-grabber-panel {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  gap: 30px;
+}
+
+.node-grabber-panel > div, .node-submit-panel > div {
+  margin-top: 20px; 
+  padding: 0px 15px;
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px;
+  /* background: blue; */
+}
+
+.node-submit-panel {
+  justify-content: right;
+}
+
+.node-grabber, .submit-button {
+  cursor: grab; 
+  min-width: 60px; 
+  height: 60px;
+  display: flex; 
+  align-items: center; 
+  border-radius: 8px;
+  justify-content: center; 
+  flex-direction: column;
+  /* background: white; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  padding: 5px;
+}
+
+.submit-button {
+  cursor: pointer
+}
+
+.node-grabber-svg {
+  color: gray;
+  padding-bottom: 5px;
+}
+
+.node-grabber-label{
+  font-size: 12px;
+  font-weight: 500;
+  color: gray
+}
+
+.response-modal {
+  width: 400px;
+  /* height: 300px; */
+  background: white;
+  border-radius: 20px;
+  padding: 3%;
+  margin: 15% auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  outline: none
+}
+
+.grid {
+  /* background: rgba(128, 128, 255, 0.2) */
+  background: ''
+}
+
